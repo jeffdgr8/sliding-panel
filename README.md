@@ -63,7 +63,7 @@ In order to start using the library you need to add a `SlidingPanel` to your lay
   android:layout_width="match_parent"
   android:layout_height="match_parent"
 
-  app:orientation="vertical"
+  android:orientation="vertical"
   app:nonSlidingView="@id/non_sliding_view"
   app:slidingView="@id/sliding_view"
   app:elevation="4dp" >
@@ -197,7 +197,7 @@ This attribute is used to set the orientation of `SlidingPanel` in the same way 
 ```xml
 <com.psoffritti.slidingpanel.SlidingPanel
   ...
-  app:orientation="horizontal" >
+  android:orientation="horizontal" >
 
   ...
 </com.psoffritti.slidingpanel.SlidingPanel>

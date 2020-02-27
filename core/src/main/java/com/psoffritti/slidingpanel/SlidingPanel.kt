@@ -103,7 +103,7 @@ class SlidingPanel(context: Context, attrs: AttributeSet? = null) : FrameLayout(
             dragViewId = typedArray.getResourceId(R.styleable.SlidingPanel_dragView, -1)
             fittingViewId = typedArray.getResourceId(R.styleable.SlidingPanel_fitToScreenView, -1)
 
-            orientation = if(typedArray.getInt(R.styleable.SlidingPanel_orientation, 0) == 0) Orientation.VERTICAL else Orientation.HORIZONTAL
+            orientation = if(typedArray.getInt(R.styleable.SlidingPanel_android_orientation, 1) == 1) Orientation.VERTICAL else Orientation.HORIZONTAL
             slidingPanelShadowLengthPixels = typedArray.getDimensionPixelSize(R.styleable.SlidingPanel_elevation, resources.getDimensionPixelSize(R.dimen.sp_4dp))
         } finally {
             typedArray.recycle()
